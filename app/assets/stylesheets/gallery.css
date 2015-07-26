@@ -1,3 +1,26 @@
+.error-message,
+#welcome-message {
+  padding: 10px 20px;
+  width: 250px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+#welcome-message {
+  background-color: #FFFFD1;
+}
+
+.error-message {
+  background-color: #FFD1FF;
+}
+
+#welcome-message,
+.gallery-image,
+.error-message {
+  box-shadow: 3px 3px 15px #999;
+}
+
 #gallery-wall {
   background-color: #d7ccc8;
   position: relative;
