@@ -38,7 +38,7 @@ ImageView.prototype.displayError = function() {
 
 ImageView.prototype.createLightbox = function() {
   var $overlay = $('<div id="overlay"></div>');
-  var $close = $('<p>Click to close</p>');
+  var $close = $('<p>Click anywhere to close</p>');
   var $image = $('<img>');
   var $caption = $('<p class="caption"></p>');
 
