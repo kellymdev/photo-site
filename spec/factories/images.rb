@@ -1,8 +1,8 @@
 FactoryGirl.define do
   factory :image do
-    title "Summer days"
-    description "The rain in Spain falls mainly on the plains"
-    filename "test.jpg"
+    title 'Arapawa Island Goat Kid'
+    description 'Arapawa Island Goat Kid - Capra aegagrus hircus.'
+    filename 'GoatKid.jpg'
   end
 
 end
