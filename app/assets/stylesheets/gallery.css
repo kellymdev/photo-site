@@ -39,3 +39,9 @@
   width: 100%;
   padding: 0;
 }
+
+.gallery-image p {
+  background-color: #b6b6b6;
+  margin: 3px 0 0;
+  padding: 10px;
+}
