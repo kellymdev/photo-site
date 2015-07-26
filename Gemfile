@@ -23,7 +23,7 @@ end
 group :test do
   gem 'capybara', '~> 2.4.4'
   gem 'chromedriver-helper'
-  gem 'shoulda-matchers', '~> 2.8.0'
   gem 'selenium-webdriver'
+  gem 'shoulda-matchers', '~> 2.8.0'
   gem 'simplecov', :require => false
 end
