@@ -3,6 +3,6 @@ function ImageController() {
   this.view = new ImageView();
 }
 
-ImageController.prototype.createImageRequest = function() {
-  this.model.requestImage(this.view.displayImage, this.view.displayError);
+ImageController.prototype.createImageRequest = function(event) {
+  this.model.requestImage(event, this.view.displayImage, this.view.displayError);
 };

@@ -3,6 +3,6 @@ $(document).ready(function() {
 
   $('#gallery-wall').on('click', function(e) {
     e.preventDefault();
-    controller.createImageRequest();
+    controller.createImageRequest(e);
   })
 });

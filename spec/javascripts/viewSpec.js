@@ -20,7 +20,7 @@ describe("ImageView", function() {
                   "description" : "Arapawa Island Goat Kid - Capra aegagrus hircus.",
                   "filename" : "GoatKid.jpg",
                   };
-      view.displayImage(data);
+      view.displayImage(event, data);
     });
 
     it("appends an image to the gallery-wall div", function() {
