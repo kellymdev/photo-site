@@ -1,4 +1,5 @@
 function ImageView() {
+  this.createLightbox();
 }
 
 ImageView.prototype.displayWelcomeMessage = function() {
@@ -23,7 +24,7 @@ ImageView.prototype.displayImage = function(event, imageDetails) {
     of: event,
     collision: "none"
   });
-}
+};
 
 ImageView.prototype.displayError = function() {
   $('#welcome-message').remove();
@@ -33,4 +34,30 @@ ImageView.prototype.displayError = function() {
                     '<p>Please try again.</p>' +
                   '</div>';
   $('#gallery-wall').append(errorHtml);
-}
+};
+
+ImageView.prototype.createLightbox = function() {
+  var $overlay = $('<div id="overlay"></div>');
+  var $close = $('<p>Click to close</p>');
+  var $image = $('<img>');
+  var $caption = $('<p class="caption"></p>');
+
+  $close.css({'text-align': 'right',
+              'margin-right': '20px',
+              'font-size': '0.75em'});
+
+  $overlay.append($close);
+  $overlay.append($image);
+  $('body').append($overlay);
+  $overlay.append($caption);
+};
+
+ImageView.prototype.displayLightbox = function(filename, description) {
+  $('#overlay img').attr("src", filename);
+  $('#overlay').show();
+  $('#overlay .caption').text(description);
+};
+
+ImageView.prototype.hideLightbox = function() {
+  $('#overlay').hide();
+};
