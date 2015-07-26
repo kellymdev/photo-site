@@ -31,6 +31,9 @@
         1,
         null,
         null,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/Kel/Documents/dev/git/photosite/app/models/image.rb": [
@@ -41,6 +44,6 @@
         null
       ]
     },
-    "timestamp": 1437947066
+    "timestamp": 1437949024
   }
 }

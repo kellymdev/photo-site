@@ -4,3 +4,17 @@
  *= require_self
  *= require jquery-ui
  */
+
+.content-box {
+  padding: 40px;
+}
+
+#primary {
+  float: left;
+  width: 45%;
+}
+
+#secondary {
+  float: right;
+  width: 45%;
+}

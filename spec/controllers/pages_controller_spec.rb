@@ -28,4 +28,18 @@ RSpec.describe PagesController, type: :controller do
       expect(response).to render_template('about')
     end
   end
+
+  describe 'get #contact' do
+    before do
+      get :contact
+    end
+
+    it "returns http status 200" do
+      expect(response.status).to eq(200)
+    end
+
+    it "renders the contact template" do
+      expect(response).to render_template('contact')
+    end
+  end
 end
