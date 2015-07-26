@@ -43,7 +43,11 @@ describe("ImageView", function() {
     });
 
     it("displays the specified image", function() {
-      expect($('#gallery-wall .gallery-image')).toContainHtml('<img src="assets/GoatKid.jpg">');
+      expect($('#gallery-wall .gallery-image')).toContainHtml('src="assets/GoatKid.jpg"');
+    });
+
+    it("adds the image description as the alt text", function() {
+      expect($('#gallery-wall .gallery-image')).toContainHtml('alt="Arapawa Island Goat Kid - Capra aegagrus hircus."');
     });
 
     it("displays the title for the specified image", function() {
