@@ -11,7 +11,7 @@ ImageView.prototype.displayWelcomeMessage = function() {
 
 ImageView.prototype.displayImage = function(event, imageDetails) {
   var imageHtml = '<div class="gallery-image">' +
-                    '<img src="assets/' + imageDetails.filename + '">' +
+                    '<img src="assets/' + imageDetails.filename + '" alt="' + imageDetails.description + '">' +
                     '<p>' + imageDetails.title + '</p>' +
                   '</div>';
 
