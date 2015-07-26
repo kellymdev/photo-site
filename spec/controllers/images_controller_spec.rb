@@ -19,4 +19,8 @@ RSpec.describe ImagesController, type: :controller do
       expect(assigns(:image)).to eq(@image)
     end
   end
+
+  after do
+    Image.destroy_all
+  end
 end
