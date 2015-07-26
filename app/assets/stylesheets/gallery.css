@@ -7,12 +7,18 @@
   left: 40%;
 }
 
+.error-message p,
+#welcome-message p,
+.gallery-image p {
+  font-family: 'Coming Soon', cursive;
+}
+
 #welcome-message {
-  background-color: #FFFFD1;
+  background-color: #ffffd1;
 }
 
 .error-message {
-  background-color: #FFD1FF;
+  background-color: #ffd1ff;
 }
 
 #welcome-message,
@@ -30,9 +36,9 @@
 }
 
 .gallery-image {
-  border: 10px solid #727272;
+  border: 10px solid black;
   width: 250px;
-  background-color: #727272;
+  background-color: black;
 }
 
 .gallery-image img {
