@@ -10,5 +10,9 @@ $(document).ready(function() {
 
   $('#gallery-wall').on('click', '.gallery-image', function(e) {
     e.stopPropagation();
+    var imageLocation = $(this).children("img").attr("src");
+    var imageDescription = $(this).children("img").attr("alt");
+    console.log(imageLocation);
+    console.log(imageDescription);
   });
 });
