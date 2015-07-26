@@ -41,6 +41,14 @@ describe("ImageView", function() {
     it("appends an image to the gallery-wall div", function() {
       expect($('#gallery-wall img')).toBeInDOM();
     });
+
+    it("displays the specified image", function() {
+      expect($('#gallery-wall .gallery-image')).toContainHtml('<img src="assets/GoatKid.jpg">');
+    });
+
+    it("displays the title for the specified image", function() {
+      expect($('.gallery-image')).toContainText('Arapawa Island Goat Kid');
+    });
   });
 
   describe("displayError", function() {
