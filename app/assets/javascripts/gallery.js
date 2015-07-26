@@ -12,7 +12,11 @@ $(document).ready(function() {
     e.stopPropagation();
     var imageLocation = $(this).children("img").attr("src");
     var imageDescription = $(this).children("img").attr("alt");
-    console.log(imageLocation);
-    console.log(imageDescription);
+    controller.requestLightbox(imageLocation, imageDescription);
+  });
+
+  $('#overlay').on('click', function(e) {
+    e.preventDefault();
+    controller.requestHideLightbox();
   });
 });
