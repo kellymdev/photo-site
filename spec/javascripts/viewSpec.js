@@ -80,7 +80,7 @@ describe("ImageView", function() {
     });
 
     it("includes a click to close message", function() {
-      expect($('#overlay')).toContainText('Click to close');
+      expect($('#overlay')).toContainText('Click anywhere to close');
     });
 
     it("includes an image tag", function() {
