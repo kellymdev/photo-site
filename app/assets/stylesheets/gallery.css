@@ -6,7 +6,7 @@
   width: 250px;
   position: absolute;
   top: 40%;
-  left: 40%;
+  left: 50%;
 }
 
 .error-message p,
@@ -31,15 +31,28 @@
 }
 
 
-/*------------Gallery Image Styles---------------*/
+/*------------Gallery Wall Styles----------------*/
 
+#gallery-frame,
 #gallery-wall {
   background-color: #d7ccc8;
+}
+
+#gallery-frame {
+  margin: 0;
+  padding: 0 269px 237px 0;
+}
+
+#gallery-wall {
+  /*background-color: #d7ccc8;*/
   position: relative;
   margin: 0;
   padding: 10px;
   height: 550px;
 }
+
+
+/*------------Gallery Image Styles---------------*/
 
 .gallery-image {
   border: 10px solid black;
