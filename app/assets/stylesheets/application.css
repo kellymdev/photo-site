@@ -8,13 +8,20 @@
 /*------------Layout Styles----------------------*/
 
 body {
-  background-color: #d7ccc8;
+  background-color: #DEDCC3;
 }
 
 .content-box {
   margin: 0 auto;
   padding: 40px;
   max-width: 950px;
+}
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
 }
 
 #primary,
@@ -31,8 +38,8 @@ body {
 }
 
 section {
-  background-color: #ffffd1;
-  box-shadow: 3px 3px 15px #999;
+  background-color: #d8eddc;
+  box-shadow: 1px 1px 10px #999;
   padding: 5px 15px;
   margin-bottom: 20px;
 }
@@ -42,7 +49,7 @@ section {
 
 h2, h3, p, li, nav {
   font-family: 'Dosis', sans-serif;
-  color: #5d4037;
+  color: #41434A;
 }
 
 h2 {
@@ -65,8 +72,9 @@ header {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #8A6B5F;
-  border-bottom: 2px solid #5d4037;
+  background-color: #87B5A8;
+  border-bottom: 2px dashed #41434A;
+  box-shadow: 3px 3px 15px #999;
 }
 
 .site-title {
@@ -74,13 +82,11 @@ header {
   padding: 10px 15px;
   float: left;
   text-align: left;
-  background-color: #ffffd1;
-  box-shadow: 3px 3px 15px #999;
 }
 
 .site-title h1,
 .site-title h2 {
-  color: #5d4037;
+  color: #41434A;
 }
 
 .site-title h1 {
@@ -113,21 +119,29 @@ nav ul {
 }
 
 nav li {
-  background-color: #ffffd1;
+  /*background-color: #DEDCC3;*/
   display: inline-block;
   margin: 15px 10px 10px;
   padding: 10px;
   font-size: 1.2em;
   text-align: center;
-  box-shadow: 3px 3px 15px #999;
+  text-shadow: 3px 3px 15px #999;
 }
 
 nav a,
 nav a:visited {
   text-decoration: none;
-  color: #5d4037;
+  color: #41434A;
 }
 
 nav a:hover {
-  color: #795548;
+  color: #DEDCC3;
+}
+
+
+/*------------Footer Styles----------------------*/
+
+footer {
+  border-top: 1px dashed #41434A;
+  text-align: center;
 }
