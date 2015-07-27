@@ -5,6 +5,8 @@
  *= require jquery-ui
  */
 
+/*------------Layout Styles----------------------*/
+
 .content-box {
   padding: 40px;
 }
@@ -17,4 +19,81 @@
 #secondary {
   float: right;
   width: 45%;
+}
+
+
+/*------------Site Title Styles------------------*/
+
+header {
+  height: 120px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #d7ccc8;
+  border-bottom: 2px dotted #795548;
+}
+
+.site-title {
+  margin: 10px 0 0 20px;
+  padding: 10px 15px;
+  float: left;
+  text-align: left;
+  background-color: #ffffd1;
+  box-shadow: 3px 3px 15px #999;
+}
+
+.site-title h1,
+.site-title h2 {
+  color: #5d4037;
+}
+
+.site-title h1 {
+  font-size: 1.8em;
+  margin: 0;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.site-title h2 {
+  font-size: 1.2em;
+  margin: 0;
+  font-family: 'Dosis', sans-serif;
+  text-transform: uppercase;
+}
+
+
+/*------------Navbar Styles----------------------*/
+
+nav {
+  float: right;
+  margin: 0;
+  padding-right: 20px;
+  font-family: 'Dosis', sans-serif;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  background-color: #ffffd1;
+  display: inline-block;
+  margin: 15px 10px 10px;
+  padding: 10px;
+  font-size: 1.2em;
+  text-align: center;
+  box-shadow: 3px 3px 15px #999;
+}
+
+nav a,
+nav a:visited {
+  text-decoration: none;
+  color: #5d4037;
+}
+
+nav a:hover {
+  color: #795548;
 }
