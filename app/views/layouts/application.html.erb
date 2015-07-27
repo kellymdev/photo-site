@@ -2,13 +2,28 @@
 <html>
   <head>
     <title>Photosite</title>
-    <link href='http://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Dosis|Montserrat|Raleway|Coming+Soon' rel='stylesheet' type='text/css'> -->
+    <link href='https://fonts.googleapis.com/css?family=Dosis|Shadows+Into+Light|Raleway|Coming+Soon' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
 
   <body>
+    <header>
+      <div class="site-title">
+        <h1>Kelly Munro Photography</h1>
+        <h2>New Zealand Nature and Wildlife</h2>
+      </div>
+
+      <nav>
+        <ul class="navbar">
+          <li><%= link_to "Portfolio", root_path %></li>
+          <li><%= link_to "About", about_path %></li>
+          <li><%= link_to "Contact", contact_path %></li>
+        </ul>
+      </nav>
+    </header>
 
     <%= yield %>
 
