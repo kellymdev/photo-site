@@ -17,7 +17,7 @@
 }
 
 #welcome-message {
-  background-color: #d8eddc;
+  background-color: #ddeddc;
 }
 
 .error-message {
@@ -32,11 +32,6 @@
 
 
 /*------------Gallery Wall Styles----------------*/
-
-#gallery-frame,
-#gallery-wall {
-  /*background-color: #d7ccc8;*/
-}
 
 #gallery-frame {
   margin: 0;
