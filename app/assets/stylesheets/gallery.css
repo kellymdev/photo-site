@@ -17,7 +17,7 @@
 }
 
 #welcome-message {
-  background-color: #ffffd1;
+  background-color: #d8eddc;
 }
 
 .error-message {
@@ -35,7 +35,7 @@
 
 #gallery-frame,
 #gallery-wall {
-  background-color: #d7ccc8;
+  /*background-color: #d7ccc8;*/
 }
 
 #gallery-frame {
