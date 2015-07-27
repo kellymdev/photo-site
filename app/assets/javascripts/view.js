@@ -16,7 +16,7 @@ ImageView.prototype.displayImage = function(event, imageDetails) {
                     '<p>' + imageDetails.title + '</p>' +
                   '</div>';
 
-  var $image = $(imageHtml)
+  var $image = $(imageHtml);
   $('#gallery-wall').append($image);
 
   $image.position({
@@ -24,6 +24,8 @@ ImageView.prototype.displayImage = function(event, imageDetails) {
     of: event,
     collision: "none"
   });
+
+  $image.draggable();
 };
 
 ImageView.prototype.displayError = function() {
