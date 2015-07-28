@@ -43,7 +43,7 @@ describe("ImageView", function() {
     });
 
     it("displays the specified image", function() {
-      expect($('#gallery-wall .gallery-image')).toContainHtml('src="assets/GoatKid.jpg"');
+      expect($('#gallery-wall .gallery-image')).toContainHtml('src="GoatKid.jpg"');
     });
 
     it("adds the image description as the alt text", function() {
