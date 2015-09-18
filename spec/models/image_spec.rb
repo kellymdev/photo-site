@@ -16,8 +16,4 @@ RSpec.describe Image, type: :model do
       expect(image).to validate_presence_of(:filename)
     end
   end
-
-  after do
-    Image.destroy_all
-  end
 end

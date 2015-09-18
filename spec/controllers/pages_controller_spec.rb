@@ -2,9 +2,7 @@ require 'rails_helper'
 
 RSpec.describe PagesController, type: :controller do
   describe 'get #home' do
-    before do
-      get :home
-    end
+    before { get :home }
 
     it "returns http status 200" do
       expect(response.status).to eq(200)
@@ -16,9 +14,7 @@ RSpec.describe PagesController, type: :controller do
   end
 
   describe 'get #about' do
-    before do
-      get :about
-    end
+    before { get :about }
 
     it "returns http status 200" do
       expect(response.status).to eq(200)
@@ -30,9 +26,7 @@ RSpec.describe PagesController, type: :controller do
   end
 
   describe 'get #contact' do
-    before do
-      get :contact
-    end
+    before { get :contact }
 
     it "returns http status 200" do
       expect(response.status).to eq(200)

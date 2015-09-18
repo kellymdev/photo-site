@@ -4,5 +4,4 @@ FactoryGirl.define do
     description 'Arapawa Island Goat Kid - Capra aegagrus hircus.'
     filename 'GoatKid.jpg'
   end
-
 end
