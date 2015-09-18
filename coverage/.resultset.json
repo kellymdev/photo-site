@@ -7,11 +7,9 @@
       ],
       "/Users/Kel/Documents/dev/git/photosite/app/controllers/images_controller.rb": [
         1,
-        null,
         1,
         3,
         3,
-        null,
         null,
         null
       ],
@@ -24,7 +22,6 @@
       ],
       "/Users/Kel/Documents/dev/git/photosite/app/controllers/pages_controller.rb": [
         1,
-        null,
         1,
         null,
         null,
@@ -32,7 +29,6 @@
         null,
         null,
         1,
-        null,
         null,
         null
       ],
@@ -44,6 +40,6 @@
         null
       ]
     },
-    "timestamp": 1438062560
+    "timestamp": 1442615975
   }
 }
