@@ -1,6 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe PagesController, type: :controller do
+  render_views
+
   describe 'get #home' do
     before { get :home }
 
@@ -9,7 +11,7 @@ RSpec.describe PagesController, type: :controller do
     end
 
     it "renders the home template" do
-      expect(response).to render_template('home')
+      expect(response).to render_template(:home)
     end
   end
 
@@ -21,7 +23,7 @@ RSpec.describe PagesController, type: :controller do
     end
 
     it "renders the about template" do
-      expect(response).to render_template('about')
+      expect(response).to render_template(:about)
     end
   end
 
@@ -33,7 +35,7 @@ RSpec.describe PagesController, type: :controller do
     end
 
     it "renders the contact template" do
-      expect(response).to render_template('contact')
+      expect(response).to render_template(:contact)
     end
   end
 end
