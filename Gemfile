@@ -29,7 +29,7 @@ group :test do
   gem 'chromedriver-helper'
   gem 'selenium-webdriver'
   gem 'shoulda-matchers', '~> 2.8.0'
-  gem 'simplecov', :require => false
+  gem 'simplecov', require: false
 end
 
 group :production do
