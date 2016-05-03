@@ -48,7 +48,7 @@ ImageView.prototype.createLightbox = function() {
 
   $close.css({'text-align': 'right',
               'margin-right': '20px',
-              'font-size': '0.75em'});
+              'font-size': '0.85em'});
 
   $overlay.append($close);
   $overlay.append($image);

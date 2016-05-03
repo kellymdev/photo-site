@@ -13,7 +13,7 @@
 #welcome-message p,
 .gallery-image p,
 #overlay p {
-  font-family: 'Coming Soon', cursive;
+  font-family: 'Dosis', sans-serif;
 }
 
 #welcome-message {
@@ -49,9 +49,9 @@
 /*------------Gallery Image Styles---------------*/
 
 .gallery-image {
-  border: 10px solid black;
+  border: 2px solid #303030;
   width: 250px;
-  background-color: black;
+  background-color: #303030;
 }
 
 .gallery-image img {
@@ -61,8 +61,8 @@
 
 .gallery-image p {
   background-color: #b6b6b6;
-  margin: 3px 0 0;
-  padding: 10px;
+  margin: 0;
+  padding: 8px;
 }
 
 
