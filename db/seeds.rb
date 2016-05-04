@@ -55,45 +55,15 @@ Image.create!([
     category: Category.find(landscapes)
   },
   {
-    title: 'California Quail',
-    description: 'California Quail, Callipepla californica.',
-    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/CaliforniaQuail.jpg',
-    category: Category.find(birds)
-  },
-  {
-    title: 'Pied Stilt',
-    description: 'Pied Stilt, Himantopus himantopus',
-    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/PiedStiltReflection.jpg',
-    category: Category.find(birds)
-  },
-  {
-    title: 'Pied Stilt',
-    description: 'Pied Stilt, Himantopus himantopus',
-    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/PiedStiltStanding.jpg',
-    category: Category.find(birds)
-  },
-  {
     title: 'Kereru',
     description: 'New Zealand Pigeon (Kereru), Hemiphaga novaeseelandiae',
     filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Kereru.jpg',
     category: Category.find(birds)
   },
   {
-    title: 'Takahe',
-    description: 'Takahe, Porphyrio hochstetteri',
-    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Takahe.jpg',
-    category: Category.find(birds)
-  },
-  {
     title: 'Kakariki',
     description: 'Red-crowned Parakeet (Kakariki), Cyanoramphus novaezelandiae',
     filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Kakariki.jpg',
-    category: Category.find(birds)
-  },
-  {
-    title: 'New Zealand Scaup Duckling',
-    description: 'New Zealand Scaup Duckling, Aythya novaeseelandiae',
-    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/ScaupDuckling.jpg',
     category: Category.find(birds)
   }
 ])

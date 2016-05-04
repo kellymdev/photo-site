@@ -31,6 +31,13 @@
 }
 
 
+/*------------Portfolio Header Styles------------*/
+
+.category-name {
+  margin: 40px 0 10px 50px;
+}
+
+
 /*------------Gallery Wall Styles----------------*/
 
 #gallery-frame {

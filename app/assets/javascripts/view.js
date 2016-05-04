@@ -16,8 +16,6 @@ ImageView.prototype.displayImage = function(event, imageDetails) {
                     '<p>' + imageDetails.title + '</p>' +
                   '</div>';
 
-                  console.log(imageDetails.filename);
-
   var $image = $(imageHtml);
   $('#gallery-wall').append($image);
 
