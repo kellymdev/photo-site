@@ -48,21 +48,33 @@
 
 /*------------Gallery Image Styles---------------*/
 
-.gallery-image {
+.gallery-image,
+.portfolio {
   border: 2px solid #303030;
   width: 250px;
   background-color: #303030;
 }
 
-.gallery-image img {
+.gallery-image img,
+.portfolio img {
   width: 100%;
   padding: 0;
 }
 
-.gallery-image p {
+.gallery-image p,
+.portfolio p {
   background-color: #b6b6b6;
   margin: 0;
   padding: 8px;
+}
+
+ul.portfolio-list {
+  list-style: none;
+}
+
+.portfolio-list li {
+  display: inline-block;
+  margin: 10px;
 }
 
 

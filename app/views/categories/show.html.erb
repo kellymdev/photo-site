@@ -1,0 +1,10 @@
+<h2><%= @category.name %></h2>
+
+<ul class="portfolio-list">
+  <% @images.each do |image| %>
+    <li class="portfolio">
+      <img src="<%= image.filename %>">
+      <p><%= image.title %></p>
+    </li>
+  <% end %>
+</ul>

@@ -1,0 +1,8 @@
+<ul class="portfolio-list">
+  <% @categories.each do |category| %>
+    <li class="portfolio">
+      <img src="<%= category.image_url %>">
+      <p><%= link_to category.name, portfolio_path(category) %></p>
+    </li>
+  <% end %>
+</ul>

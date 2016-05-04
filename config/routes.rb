@@ -5,4 +5,7 @@ Rails.application.routes.draw do
 
   get 'pages/about', to: 'pages#about', as: :about
   get 'pages/contact', to: 'pages#contact', as: :contact
+
+  get 'portfolio', to: 'categories#index', as: :portfolio_index
+  get 'portfolio/:id', to: 'categories#show', as: :portfolio
 end

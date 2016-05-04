@@ -6,11 +6,11 @@ RSpec.describe PagesController, type: :controller do
   describe 'get #home' do
     before { get :home }
 
-    it "returns http status 200" do
+    it 'returns http status 200' do
       expect(response.status).to eq(200)
     end
 
-    it "renders the home template" do
+    it 'renders the home template' do
       expect(response).to render_template(:home)
     end
   end
@@ -18,11 +18,11 @@ RSpec.describe PagesController, type: :controller do
   describe 'get #about' do
     before { get :about }
 
-    it "returns http status 200" do
+    it 'returns http status 200' do
       expect(response.status).to eq(200)
     end
 
-    it "renders the about template" do
+    it 'renders the about template' do
       expect(response).to render_template(:about)
     end
   end
@@ -30,11 +30,11 @@ RSpec.describe PagesController, type: :controller do
   describe 'get #contact' do
     before { get :contact }
 
-    it "returns http status 200" do
+    it 'returns http status 200' do
       expect(response.status).to eq(200)
     end
 
-    it "renders the contact template" do
+    it 'renders the contact template' do
       expect(response).to render_template(:contact)
     end
   end
