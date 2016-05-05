@@ -13,7 +13,7 @@ landscapes = Category.create!(
 )
 nature = Category.create!(
   name: 'Nature',
-  image_url: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Ruapehu.jpg'
+  image_url: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/WaterLily.jpg'
 )
 
 # Images
@@ -49,21 +49,69 @@ Image.create!([
     category: Category.find(birds)
   },
   {
+    title: 'Kereru',
+    description: 'New Zealand Pigeon (Kereru), Hemiphaga novaeseelandiae.',
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Kereru.jpg',
+    category: Category.find(birds)
+  },
+  {
+    title: 'Kakariki',
+    description: 'Red-crowned Parakeet (Kakariki), Cyanoramphus novaezelandiae.',
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Kakariki.jpg',
+    category: Category.find(birds)
+  },
+  {
+    title: 'Pied Stilt',
+    description: 'Pied Stilt (Poaka), Himantopus himantopus.',
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/PiedStilt.jpg',
+    category: Category.find(birds)
+  },
+  {
     title: 'Mount Ruapehu',
     description: 'Mount Ruapehu, Tongariro National Park.',
     filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Ruapehu.jpg',
     category: Category.find(landscapes)
   },
   {
-    title: 'Kereru',
-    description: 'New Zealand Pigeon (Kereru), Hemiphaga novaeseelandiae',
-    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Kereru.jpg',
-    category: Category.find(birds)
+    title: 'Skippers Road',
+    description: 'Skippers Road, Skippers Canyon, Otago.',
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Road.jpg',
+    category: Category.find(landscapes)
   },
   {
-    title: 'Kakariki',
-    description: 'Red-crowned Parakeet (Kakariki), Cyanoramphus novaezelandiae',
-    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Kakariki.jpg',
-    category: Category.find(birds)
+    title: 'Tararua Ranges',
+    description: 'Sunset over the Tararua Ranges',
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Sunset.jpg',
+    category: Category.find(landscapes)
+  },
+  {
+    title: 'Te Rewa Rewa Bridge',
+    description: 'Te Rewa Rewa Bridge, New Plymouth.',
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/TeRewaRewaBridge.jpg',
+    category: Category.find(landscapes)
+  },
+  {
+    title: 'Autumn',
+    description: 'Autumn colours in Queenstown Gardens',
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Autumn.jpg',
+    category: Category.find(nature)
+  },
+  {
+    title: 'Autumn Colours',
+    description: 'Four Seasons on one Tree',
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Leaves.jpg',
+    category: Category.find(nature)
+  },
+  {
+    title: 'Shadows',
+    description: 'Shadows, Queenstown Gardens.',
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Shadows.jpg',
+    category: Category.find(nature)
+  },
+  {
+    title: 'Water Lily',
+    description: 'Water Lily Reflections',
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/WaterLily.jpg',
+    category: Category.find(nature)
   }
 ])

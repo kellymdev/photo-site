@@ -1,32 +1,11 @@
-/*------------Welcome and Error Styles-----------*/
+/*------------Font and Shadow Styles-------------*/
 
-.error-message,
-#welcome-message {
-  padding: 10px 20px;
-  width: 250px;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-}
-
-.error-message p,
-#welcome-message p,
 .gallery-image p,
 #overlay p {
   font-family: 'Dosis', sans-serif;
 }
 
-#welcome-message {
-  background-color: #ddeddc;
-}
-
-.error-message {
-  background-color: #ffd1ff;
-}
-
-#welcome-message,
-.gallery-image,
-.error-message {
+.gallery-image {
   box-shadow: 3px 3px 15px #999;
 }
 
@@ -37,23 +16,20 @@
   margin: 40px 0 10px 50px;
 }
 
-
-/*------------Gallery Wall Styles----------------*/
-
-#gallery-frame {
-  margin: 0;
-  padding: 0 269px 237px 0;
+.category-name a,
+.portfolio a {
+  color: #41434A;
+  text-decoration: none;
 }
 
-#gallery-wall {
-  position: relative;
-  margin: 0;
-  padding: 10px;
-  height: 550px;
+.category-name a:visited,
+.portfolio a:visited {
+  color: #41434A;
+  text-decoration: none;
 }
 
 
-/*------------Gallery Image Styles---------------*/
+/*------------Portfolio Image Styles---------------*/
 
 .gallery-image,
 .portfolio {
