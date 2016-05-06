@@ -1,8 +1,4 @@
 # Categories
-animals = Category.create!(
-  name: 'Animals',
-  image_url: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Seal.jpg'
-)
 birds = Category.create!(
   name: 'Birds',
   image_url: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/MandarinDuck.jpg'
@@ -14,6 +10,10 @@ landscapes = Category.create!(
 nature = Category.create!(
   name: 'Nature',
   image_url: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/WaterLily.jpg'
+)
+wildlife = Category.create!(
+  name: 'Wildlife',
+  image_url: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Seal.jpg'
 )
 
 # Images
@@ -34,13 +34,13 @@ Image.create!([
     title: 'Arapawa Island Goat Kid',
     description: 'Arapawa Island Goat Kid - Capra aegagrus hircus.',
     filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/GoatKid.jpg',
-    category: Category.find(animals)
+    category: Category.find(wildlife)
   },
   {
     title: 'New Zealand Fur Seal',
     description: 'New Zealand Fur Seal, Arctocephalus forsteri.',
     filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Seal.jpg',
-    category: Category.find(animals)
+    category: Category.find(wildlife)
   },
   {
     title: 'North Island Robin',
