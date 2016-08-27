@@ -17,7 +17,7 @@ RSpec.describe CategoriesController, type: :controller do
   end
 
   describe 'get #show' do
-    before { get :show, id: category.id }
+    before { get :show, params: { id: category.id } }
 
     it 'returns http status 200' do
       expect(response.status).to eq(200)
