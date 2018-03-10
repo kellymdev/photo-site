@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :image do
     title 'Arapawa Island Goat Kid'
     description 'Arapawa Island Goat Kid - Capra aegagrus hircus.'
