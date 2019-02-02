@@ -4,12 +4,12 @@ ruby '2.6.1'
 gem 'rails', '~> 5.2.2'
 gem 'pg'
 gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier', '~> 4.1'
 gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
-gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'jbuilder', '~> 2.8'
+gem 'sdoc', '~> 1.0', group: :doc
 gem 'normalize-rails'
 gem 'rails_serve_static_assets'
 

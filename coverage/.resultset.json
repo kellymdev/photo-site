@@ -36,12 +36,7 @@
         1,
         1,
         null,
-        null,
         1,
-        null,
-        null,
-        1,
-        null,
         null
       ],
       "/Users/Kel/Documents/dev/git/photosite/app/models/category.rb": [
@@ -62,6 +57,6 @@
         null
       ]
     },
-    "timestamp": 1549072589
+    "timestamp": 1549073794
   }
 }
