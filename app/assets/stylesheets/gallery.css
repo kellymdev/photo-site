@@ -6,7 +6,6 @@
 }
 
 .gallery-image {
-  box-shadow: 3px 3px 15px #999;
   cursor: pointer;
 }
 
@@ -19,13 +18,13 @@
 
 .category-name a,
 .portfolio a {
-  color: #41434A;
+  color: #403E3F;
   text-decoration: none;
 }
 
 .category-name a:visited,
 .portfolio a:visited {
-  color: #41434A;
+  color: #403E3F;
   text-decoration: none;
 }
 
@@ -34,9 +33,9 @@
 
 .gallery-image,
 .portfolio {
-  border: 2px solid #303030;
+  border: 2px solid #403E3F;
   width: 250px;
-  background-color: #303030;
+  background-color: #403E3F;
 }
 
 .gallery-image img,
@@ -47,7 +46,8 @@
 
 .gallery-image p,
 .portfolio p {
-  background-color: #b6b6b6;
+  color: #F2F2F2;
+  background-color: #403E3F;
   margin: 0;
   padding: 8px;
 }
