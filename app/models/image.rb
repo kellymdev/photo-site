@@ -4,4 +4,6 @@ class Image < ActiveRecord::Base
   validates :title, presence: true
   validates :description, presence: true
   validates :filename, presence: true
+
+  scope :landscapes, -> { where(category: Category.find_by(name: 'Landscapes')) }
 end

@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'categories#index'
+  root to: 'pages#index'
 
   get 'images/random', to: 'images#random', as: :random_image
 

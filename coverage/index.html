@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-04-21T15:33:02+12:00">2019-04-21T15:33:02+12:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-04-21T17:09:41+12:00">2019-04-21T17:09:41+12:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.2
+         1.28
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>7</b> files in total.
-    <b>25</b> relevant lines. 
-    <span class="green"><b>25</b> lines covered</span> and
+    <b>28</b> relevant lines. 
+    <span class="green"><b>28</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -83,11 +83,11 @@
       <tr>
         <td class="strong"><a href="#4e452f749c7ced685b3df8bf98588391b25132f1" class="src_link" title="app/controllers/pages_controller.rb">app/controllers/pages_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
+        <td>9</td>
         <td>5</td>
-        <td>3</td>
-        <td>3</td>
+        <td>5</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>1.2</td>
       </tr>
       
       <tr>
@@ -113,11 +113,11 @@
       <tr>
         <td class="strong"><a href="#f040d1c2a24447a4d5850439542c463d2226bc8c" class="src_link" title="app/models/image.rb">app/models/image.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>7</td>
-        <td>5</td>
-        <td>5</td>
+        <td>9</td>
+        <td>6</td>
+        <td>6</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>1.3</td>
       </tr>
       
     </tbody>
@@ -133,15 +133,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.33
+         1.35
        </span>
     </span> hits/line)
   </h2>
   <a name="Controllers"></a>
   <div>
     <b>4</b> files in total.
-    <b>15</b> relevant lines. 
-    <span class="green"><b>15</b> lines covered</span> and
+    <b>17</b> relevant lines. 
+    <span class="green"><b>17</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -191,11 +191,11 @@
       <tr>
         <td class="strong"><a href="#4e452f749c7ced685b3df8bf98588391b25132f1" class="src_link" title="app/controllers/pages_controller.rb">app/controllers/pages_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
+        <td>9</td>
         <td>5</td>
-        <td>3</td>
-        <td>3</td>
+        <td>5</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>1.2</td>
       </tr>
       
     </tbody>
@@ -209,16 +209,16 @@
     (<span class="covered_percent"><span class="green">100.0%</span></span>
      covered at
      <span class="covered_strength">
-       <span class="yellow">
-         1.0
+       <span class="green">
+         1.18
        </span>
     </span> hits/line)
   </h2>
   <a name="Models"></a>
   <div>
     <b>2</b> files in total.
-    <b>9</b> relevant lines. 
-    <span class="green"><b>9</b> lines covered</span> and
+    <b>10</b> relevant lines. 
+    <span class="green"><b>10</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -248,11 +248,11 @@
       <tr>
         <td class="strong"><a href="#f040d1c2a24447a4d5850439542c463d2226bc8c" class="src_link" title="app/models/image.rb">app/models/image.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>7</td>
-        <td>5</td>
-        <td>5</td>
+        <td>9</td>
+        <td>6</td>
+        <td>6</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>1.3</td>
       </tr>
       
     </tbody>
@@ -616,8 +616,8 @@
     <h3>app/controllers/pages_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>3</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -634,22 +634,46 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  def about; end</code>
+          <code class="ruby">  def index</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="3">
+        <li class="covered" data-hits="2" data-linenumber="3">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @image = Image.landscapes.order(Arel.sql(&#39;random()&#39;)).first</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def about; end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
           <code class="ruby">  def contact; end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="never" data-hits="" data-linenumber="9">
           
           
           <code class="ruby">end</code>
@@ -751,8 +775,8 @@
     <h3>app/models/image.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>5</b> relevant lines. 
-      <span class="green"><b>5</b> lines covered</span> and
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -797,6 +821,18 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="8">
+          <span class="hits">3</span>
+          
+          <code class="ruby">  scope :landscapes, -&gt; { where(category: Category.find_by(name: &#39;Landscapes&#39;)) }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
           
           
           <code class="ruby">end</code>
