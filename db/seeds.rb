@@ -1,117 +1,137 @@
 # Categories
 birds = Category.create!(
   name: 'Birds',
-  image_url: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/MandarinDuck.jpg'
+  image_url: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-PiedStiltReflection.jpg'
 )
 landscapes = Category.create!(
   name: 'Landscapes',
-  image_url: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Ruapehu.jpg'
+  image_url: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-Ruapehu.jpg'
 )
 nature = Category.create!(
   name: 'Nature',
-  image_url: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/WaterLily.jpg'
+  image_url: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-WaterLily.jpg'
 )
 wildlife = Category.create!(
   name: 'Wildlife',
-  image_url: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Seal.jpg'
+  image_url: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-Seal.jpg'
+)
+creative = Category.create!(
+  name: 'Creative',
+  image_url: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-CorrugationsAndCabbageTrees.jpg'
 )
 
 # Images
-Image.create!([
-  {
-    title: 'Mallard Ducklings',
-    description: 'Mallard Ducklings, Anas platyrhynchos.',
-    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Ducklings.jpg',
-    category: Category.find(birds)
-  },
-  {
-    title: 'Mandarin Duck',
-    description: 'Mandarin Duck, Aix galericulata.',
-    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/MandarinDuck.jpg',
-    category: Category.find(birds)
-  },
-  {
-    title: 'Arapawa Island Goat Kid',
-    description: 'Arapawa Island Goat Kid - Capra aegagrus hircus.',
-    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/GoatKid.jpg',
-    category: Category.find(wildlife)
-  },
-  {
-    title: 'New Zealand Fur Seal',
-    description: 'New Zealand Fur Seal, Arctocephalus forsteri.',
-    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Seal.jpg',
-    category: Category.find(wildlife)
-  },
+birds.images.create!([
   {
     title: 'North Island Robin',
     description: 'North Island Robin or Toutouwai, Petroica longipes.',
-    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/BWRobin.jpg',
-    category: Category.find(birds)
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-BWRobin.jpg'
   },
   {
     title: 'Kereru',
     description: 'New Zealand Pigeon (Kereru), Hemiphaga novaeseelandiae.',
-    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Kereru.jpg',
-    category: Category.find(birds)
-  },
-  {
-    title: 'Kakariki',
-    description: 'Red-crowned Parakeet (Kakariki), Cyanoramphus novaezelandiae.',
-    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Kakariki.jpg',
-    category: Category.find(birds)
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-Kereru.jpg'
   },
   {
     title: 'Pied Stilt',
     description: 'Pied Stilt (Poaka), Himantopus himantopus.',
-    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/PiedStilt.jpg',
-    category: Category.find(birds)
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-PiedStilt.jpg'
   },
+  {
+    title: 'Pied Stilt Reflection',
+    description: 'Pied Stilt Reflection, Himantopus himantopus.',
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-PiedStiltReflection.jpg'
+  }
+])
+
+landscapes.images.create!([
   {
     title: 'Mount Ruapehu',
     description: 'Mount Ruapehu, Tongariro National Park.',
-    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Ruapehu.jpg',
-    category: Category.find(landscapes)
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-Ruapehu.jpg'
   },
   {
     title: 'Skippers Road',
     description: 'Skippers Road, Skippers Canyon, Otago.',
-    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Road.jpg',
-    category: Category.find(landscapes)
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-Road.jpg'
   },
   {
     title: 'Tararua Ranges',
     description: 'Sunset over the Tararua Ranges',
-    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Sunset.jpg',
-    category: Category.find(landscapes)
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-Sunset.jpg'
   },
   {
     title: 'Te Rewa Rewa Bridge',
     description: 'Te Rewa Rewa Bridge, New Plymouth.',
-    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/TeRewaRewaBridge.jpg',
-    category: Category.find(landscapes)
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-TeRewaRewaBridge.jpg'
   },
+  {
+    title: 'Lake Rotoiti',
+    description: 'Lake Rotoiti',
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-LakeRotoiti.jpg'
+  },
+  {
+    title: 'Honeycomb Rock',
+    description: 'First light at Honeycomb Rock',
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-HoneycombRock.jpg'
+  },
+  {
+    title: 'Glenburn Sunrise',
+    description: 'Glenburn Sunrise',
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-GlenburnSunrise.jpg'
+  },
+  {
+    title: 'Kaiti Hill',
+    description: 'Kaiti Hill',
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-KaitiHill.jpg'
+  }
+])
+
+nature.images.create!([
   {
     title: 'Autumn',
     description: 'Autumn colours in Queenstown Gardens',
-    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Autumn.jpg',
-    category: Category.find(nature)
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-Autumn.jpg'
   },
   {
     title: 'Autumn Colours',
     description: 'Four Seasons on one Tree',
-    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Leaves.jpg',
-    category: Category.find(nature)
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-Leaves.jpg'
   },
   {
     title: 'Shadows',
     description: 'Shadows, Queenstown Gardens.',
-    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/Shadows.jpg',
-    category: Category.find(nature)
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-Shadows.jpg'
   },
   {
     title: 'Water Lily',
     description: 'Water Lily Reflections',
-    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/WaterLily.jpg',
-    category: Category.find(nature)
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-WaterLily.jpg'
+  }
+])
+
+wildlife.images.create!([
+  {
+    title: 'New Zealand Fur Seal',
+    description: 'New Zealand Fur Seal, Arctocephalus forsteri.',
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-Seal.jpg'
+  },
+  {
+    title: 'New Zealand Fur Seal Pup',
+    description: 'New Zealand Fur Seal Pup, Arctocephalus forsteri.',
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-NZFurSealPup.jpg'
+  }
+])
+
+creative.images.create!([
+  {
+    title: 'Corrugations',
+    description: 'Corrugations and Cabbage Trees',
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-CorrugationsAndCabbageTrees.jpg'
+  },
+  {
+    title: 'Monarch Butterfly',
+    description: 'Monarch Butterfly, Danaus plexippus.',
+    filename: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-MonarchButterfly.jpg'
   }
 ])
