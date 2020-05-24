@@ -1,68 +1,82 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Kel/Documents/dev/git/photosite/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/Kel/Documents/dev/git/photosite/app/controllers/categories_controller.rb": [
-        1,
-        1,
-        2,
-        null,
-        null,
-        1,
-        2,
-        2,
-        null,
-        null
-      ],
-      "/Users/Kel/Documents/dev/git/photosite/app/controllers/application_controller.rb": [
-        1,
-        null,
-        null,
-        1,
-        null
-      ],
-      "/Users/Kel/Documents/dev/git/photosite/app/controllers/images_controller.rb": [
-        1,
-        1,
-        2,
-        2,
-        null,
-        null
-      ],
-      "/Users/Kel/Documents/dev/git/photosite/app/controllers/pages_controller.rb": [
-        1,
-        1,
-        2,
-        null,
-        null,
-        1,
-        null,
-        1,
-        null
-      ],
-      "/Users/Kel/Documents/dev/git/photosite/app/models/category.rb": [
-        1,
-        1,
-        null,
-        1,
-        1,
-        null
-      ],
-      "/Users/Kel/Documents/dev/git/photosite/app/models/image.rb": [
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        3,
-        null
-      ]
+      "/Users/Kel/Documents/dev/git/photosite/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/Kel/Documents/dev/git/photosite/app/controllers/categories_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/Kel/Documents/dev/git/photosite/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/Kel/Documents/dev/git/photosite/app/controllers/images_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/Kel/Documents/dev/git/photosite/app/controllers/pages_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/Kel/Documents/dev/git/photosite/app/models/category.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/Kel/Documents/dev/git/photosite/app/models/image.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          3,
+          null
+        ]
+      }
     },
-    "timestamp": 1579912808
+    "timestamp": 1590290135
   }
 }
