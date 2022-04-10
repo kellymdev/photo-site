@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.7.2'
 
-gem 'rails', '~> 6.1.3'
+gem 'rails', '~> 6.1.5'
 gem 'pg'
 gem 'sass-rails', '~> 6.0'
 gem 'uglifier', '~> 4.2'
@@ -24,7 +24,6 @@ group :development, :test do
   gem 'spring'
   gem 'rspec-rails', '~> 4.0.2'
   gem 'factory_bot_rails'
-  gem 'jasmine'
 end
 
 group :test do
