@@ -1,24 +1,23 @@
 # Categories
-birds = Category.create!(
-  name: 'Birds',
-  image_url: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-PiedStiltReflection.jpg'
-)
-landscapes = Category.create!(
-  name: 'Landscapes',
-  image_url: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-Ruapehu.jpg'
-)
-nature = Category.create!(
-  name: 'Nature',
-  image_url: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-WaterLily.jpg'
-)
-wildlife = Category.create!(
-  name: 'Wildlife',
-  image_url: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-Seal.jpg'
-)
-creative = Category.create!(
-  name: 'Creative',
-  image_url: 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-CorrugationsAndCabbageTrees.jpg'
-)
+birds = Category.find_or_initialize_by(name: 'Birds')
+birds.image_url = 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-PiedStiltReflection.jpg'
+birds.save!
+
+landscapes = Category.find_or_initialize_by(name: 'Landscapes')
+landscapes.image_url = 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-Ruapehu.jpg'
+landscapes.save!
+
+nature = Category.find_or_initialize_by(name: 'Nature')
+nature.image_url = 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-WaterLily.jpg'
+nature.save!
+
+wildlife = Category.find_or_initialize_by(name: 'Wildlife')
+wildlife.image_url = 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-Seal.jpg'
+wildlife.save!
+
+creative = Category.find_or_initialize_by(name: 'Creative')
+creative.image_url = 'https://s3-ap-southeast-2.amazonaws.com/photographysite/KM-CorrugationsAndCabbageTrees.jpg'
+creative.save!
 
 # Images
 birds.images.create!([
