@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
-ruby '3.0.4'
+ruby '3.1.2'
 
-gem 'rails', '~> 6.1.5'
+gem 'rails', '~> 6.1.6'
 gem 'puma', '~> 5.6.4'
 gem 'pg'
 gem 'sass-rails', '~> 6.0'
@@ -14,6 +14,7 @@ gem 'sdoc', '~> 2.0', group: :doc
 gem 'normalize-rails'
 gem 'rails_serve_static_assets'
 gem 'webpacker'
+gem 'net-smtp', require: false
 
 group :development do
   gem 'web-console'
