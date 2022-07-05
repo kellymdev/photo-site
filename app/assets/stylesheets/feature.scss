@@ -1,9 +1,11 @@
+@import 'colours.scss';
+
 .feature {
   margin: 40px;
 }
 
 .feature img {
-  border: 2px solid #403E3F;
+  border: 2px solid $text-color;
   max-width: 100%;
   height: auto;
 }

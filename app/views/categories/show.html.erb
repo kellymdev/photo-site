@@ -1,10 +1,17 @@
-<h2 class="category-name"><%= link_to "Portfolio", portfolio_index_path %> &gt; <%= @category.name %></h2>
+<div class="container">
+  <h2 class="category-name"><%= link_to "Portfolio", portfolio_index_path %> &gt; <%= @category.name %></h2>
 
-<ul class="portfolio-list">
-  <% @images.each do |image| %>
-    <li class="gallery-image">
-      <%= image_tag(image.filename, alt: image.description) %>
-      <p><%= image.title %></p>
-    </li>
-  <% end %>
-</ul>
+  <div class="portfolio-category">
+    <% @images.each do |image| %>
+      <div class="portfolio-image-container">
+        <div class="portfolio-image-container__image">
+          <%= image_tag(image.filename, alt: image.description) %>
+        </div>
+        <div class="portfolio-image-container__description">
+          <h3 class="portfolio-image-container__image-title"><%= image.title %></h3>
+          <p class="portfolio-image-container__image-description"><%= image.description %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

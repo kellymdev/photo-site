@@ -1,7 +1,7 @@
 $(document).ready(function() {
   var controller = new ImageController();
 
-  $('.portfolio-list').on('click', '.gallery-image', function(e) {
+  $('.portfolio-category').on('click', '.portfolio-image-container__image', function(e) {
     e.stopPropagation();
     var imageLocation = $(this).children("img").attr("src");
     var imageDescription = $(this).children("img").attr("alt");

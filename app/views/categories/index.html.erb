@@ -1,12 +1,14 @@
-<h2 class="category-name">Portfolio</h2>
+<div class="container">
+  <h2 class="category-name">Portfolio</h2>
 
-<ul class="portfolio-list">
-  <% @categories.each do |category| %>
-    <li class="portfolio">
-      <a href="<%= portfolio_path(category) %>">
-        <%= image_tag(category.image_url, alt: category.name) %>
-        <p><%= category.name %></p>
-      </a>
-    </li>
-  <% end %>
-</ul>
+  <div class="portfolio-list">
+    <% @categories.each do |category| %>
+      <div class="portfolio">
+        <a href="<%= portfolio_path(category) %>">
+          <%= image_tag(category.image_url, alt: category.name) %>
+          <p><%= category.name %></p>
+        </a>
+      </div>
+    <% end %>
+  </div>
+</div>

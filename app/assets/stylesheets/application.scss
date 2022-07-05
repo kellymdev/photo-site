@@ -5,43 +5,30 @@
  *= require jquery-ui
  */
 
+@import 'colours.scss';
+
 /*------------Layout Styles----------------------*/
 
 body {
-  background-color: #D9D9D9;
+  background-color: $background-color;
 }
 
-.content-box {
+.container {
   margin: 0 auto;
   padding: 40px;
   max-width: 950px;
 }
 
-.clearfix:after {
-  content: " ";
-  display: block;
-  height: 0;
-  clear: both;
-}
-
-#primary,
-#secondary {
-  width: 45%;
-}
-
-#primary {
-  float: left;
-}
-
-#secondary {
-  float: right;
+.flexible-container {
+  display: flex;
+  flex-direction: row;
 }
 
 section {
   background-color: #F2F2F2;
   padding: 5px 15px;
   margin-bottom: 20px;
-  border: 2px solid #403E3F;
+  border: 2px solid $text-color;
 }
 
 
@@ -49,7 +36,7 @@ section {
 
 h2, h3, p, li, nav {
   font-family: 'Dosis', sans-serif;
-  color: #403E3F;
+  color: $text-color;
 }
 
 h2 {
@@ -57,11 +44,11 @@ h2 {
 }
 
 a {
-  color: #734854;
+  color: $link-color;
 }
 
 a:visited {
-  color: #734854;
+  color: $link-color;
 }
 
 
@@ -72,9 +59,10 @@ header {
   width: 100%;
   margin: 15px 0 0 0;
   padding: 0;
-  background-color: #9DAABB;
-  border-top: 5px solid #403E3F;
-  border-bottom: 5px solid #403E3F;
+  background-color: $header-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .site-title {
@@ -86,17 +74,20 @@ header {
 
 .site-title h1,
 .site-title h2 {
-  color: #403E3F;
+  color: $text-color;
+  font-weight: normal;
 }
 
 .site-title h1 {
-  font-size: 1.8em;
-  margin: 0;
-  font-family: 'Shadows Into Light', cursive;
+  font-size: 2.1em;
+  margin: 0 0 10px 0;
+  font-family: 'Yellowtail', cursive;
+  border-bottom: 2px solid $text-color;
+  padding-bottom: 7px;
 }
 
 .site-title h2 {
-  font-size: 1.2em;
+  font-size: 1em;
   margin: 0;
   text-transform: uppercase;
 }
@@ -105,7 +96,6 @@ header {
 /*------------Navbar Styles----------------------*/
 
 nav {
-  float: right;
   margin: 0;
   padding-right: 20px;
   text-transform: uppercase;
@@ -129,17 +119,17 @@ nav li {
 nav a,
 nav a:visited {
   text-decoration: none;
-  color: #403E3F;
+  color: $text-color;
 }
 
 nav a:hover {
-  color: #734854;
+  color: $background-color;
 }
 
 
 /*------------Footer Styles----------------------*/
 
 footer {
-  border-top: 1px dashed #403E3F;
+  border-top: 1px dashed $text-color;
   text-align: center;
 }
