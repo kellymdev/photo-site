@@ -54,10 +54,16 @@ a:visited {
 
 /*------------Site Title Styles------------------*/
 
+.header-container {
+  border-top: 15px solid $background-color;
+  background-color: rgba($header-color, 0.5);
+  padding: 10px 0;
+}
+
 header {
   height: 120px;
   width: 100%;
-  margin: 15px 0 0 0;
+  margin: 0;
   padding: 0;
   background-color: $header-color;
   display: flex;

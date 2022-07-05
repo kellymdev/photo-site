@@ -2,10 +2,18 @@
 
 .feature {
   margin: 40px;
-}
+  background-color: rgba($header-color, 0.5);
+  padding: 15px;
+  max-width: 850px;
+  border-radius: 5px;
 
-.feature img {
-  border: 2px solid $text-color;
-  max-width: 100%;
-  height: auto;
+  img {
+    max-width: 100%;
+    height: auto;
+    background-color: rgba($header-color, 0.5);
+  }
+
+  p {
+    font-family: 'Josefin Sans', sans-serif;
+  }
 }
