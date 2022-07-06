@@ -19,16 +19,11 @@ body {
   max-width: 950px;
 }
 
-.flexible-container {
-  display: flex;
-  flex-direction: row;
-}
-
 section {
-  background-color: #F2F2F2;
+  background-color: rgba($header-color, 0.5);
   padding: 5px 15px;
   margin-bottom: 20px;
-  border: 2px solid $text-color;
+  border-radius: 5px;
 }
 
 
@@ -57,7 +52,7 @@ a:visited {
 .header-container {
   border-top: 15px solid $background-color;
   background-color: rgba($header-color, 0.5);
-  padding: 10px 0;
+  padding: 10px 0 12px 0;
 }
 
 header {
@@ -76,26 +71,25 @@ header {
   padding: 10px 15px;
   float: left;
   text-align: left;
-}
 
-.site-title h1,
-.site-title h2 {
-  color: $text-color;
-  font-weight: normal;
-}
+  h1, h2 {
+    color: $text-color;
+    font-weight: normal;
+  }
 
-.site-title h1 {
-  font-size: 2.1em;
-  margin: 0 0 10px 0;
-  font-family: 'Yellowtail', cursive;
-  border-bottom: 2px solid $text-color;
-  padding-bottom: 7px;
-}
+  h1 {
+    font-size: 2.1em;
+    margin: 0 0 10px 0;
+    font-family: 'Yellowtail', cursive;
+    border-bottom: 2px solid $text-color;
+    padding-bottom: 7px;
+  }
 
-.site-title h2 {
-  font-size: 1em;
-  margin: 0;
-  text-transform: uppercase;
+  h2 {
+    font-size: 1em;
+    margin: 0;
+    text-transform: uppercase;
+  }
 }
 
 
